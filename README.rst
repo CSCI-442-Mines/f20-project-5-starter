@@ -1,7 +1,7 @@
-CSCI-442 - Fall'20: Project 4 - A Simple Memory Management Simulator
+CSCI-442 - Fall'20: Project 5 - A Simple Memory Management Simulator
 ==============================================
 
-:Assigned: November 23, 2020
+:Assigned: November 25, 2020
 :Due: December 14, 2020, at 11:59 PM
 
 Introduction
@@ -16,11 +16,11 @@ the number of memory accesses, page faults, and free frames remaining in
 the system.
 
 This project must be implemented in C++, and it must execute correctly
-on the computers in the Alamode lab.
+on the computers in the Isengard lab.
 
 .. _sec:deliverables:
 
-Deliverables
+1. Deliverables
 ============
 
 We will continue to use GitHub for managing the submissions, and a link
@@ -51,11 +51,11 @@ Examples of the correct output for this deliverable are provided with
 the starter code.
 
 While the official due date is 23:59 Dec 14, 2020, there will be an
-automatic extension until 23:59 Dec 19, 2020. However 23:59 Dec 19, 2020
+automatic extension until 23:59 Dec 19, 2020. However 23:59 Dec 21, 2020
 is the FINAL deadline to ensure that grading is able to be completed in
 a timely manner.
 
-Grading
+2. Grading
 =======
 
 Grading for this project will be split between passing unit tests and
@@ -69,9 +69,6 @@ not abide by these output formatting rules and examples.
 Make sure all debugging and other non-required print statements have
 been commented out before submitting your deliverables.
 
-Your project cannot be graded we do not know whose project it is. Make
-sure the ``author`` file is present and contains your name as described
-in Section `1 <#sec:deliverables>`__.
 
 The following rubric will be used to when grading your project:
 
@@ -83,7 +80,7 @@ The following rubric will be used to when grading your project:
 
 .. _sec:req_refs:
 
-Requirements and Reference
+3. Requirements and Reference
 ==========================
 
 -  To compile your code, the grader should be to ``cd`` into it and
@@ -103,7 +100,7 @@ Requirements and Reference
 -  Your project must execute correctly on Isengard. That is
    where it will be graded.
 
--  As long as they are present on the Alamode computers, you are
+-  As long as they are present on the Isengard computers, you are
    encouraged to use any C++ libraries you may find useful, such as
    ``<bitset>``, ``<map>``, ``<queue>``, etc.
 
@@ -111,7 +108,7 @@ Requirements and Reference
    easier to work in and debug, but it will also make for a happier
    grader.
 
-Submission Checklist
+4. Submission Checklist
 ====================
 
 Please make sure that you have done all of the following prior to
@@ -146,7 +143,7 @@ submission via the ``submit-my-work`` program:
    -  Run ``./submit-my-work`` from the root of your repository. Make
       sure it has execution permissions with ``chmod +x submit-my-work``
 
-Getting Started
+5. Getting Started
 ===============
 
 In recognition of the challenges that have been caused by the quarantine
@@ -258,7 +255,7 @@ it is suggested that you read them carefully.
 
 .. _sec:sim_props:
 
-Simulation Properties
+6. Simulation Properties
 =====================
 
 Your program will simulate memory management for a hypothetical computer
@@ -316,7 +313,7 @@ system with the following attributes:
 
 .. _sec:replacement_strats:
 
-Replacement Strategies
+7.Replacement Strategies
 ======================
 
 Your memory management simulation must support two different
@@ -333,7 +330,7 @@ real OS.
 
 .. _sec:output:
 
-Required Output
+8. Required Output
 ===============
 
 Examples of all outputs can be found within the starter code under
@@ -430,7 +427,7 @@ anything else, even if the ``–verbose`` flag is also provided in the
 command line. (This is taken care of for you within the provided flag
 parsing functionality.)**
 
-Simulation File Format
+9. Simulation File Format
 ======================
 
 This section is provided as a reference. All the file input parsing has
@@ -485,7 +482,7 @@ dummy process images under the ``inputs/`` directory.
 
 .. _sec:flags:
 
-Command-Line Flags
+10. Command-Line Flags
 ==================
 
 This section is provided as a reference. All the command line input
@@ -553,7 +550,7 @@ how to run your program and the flags it accepts and then
 **immediately** exit.
 
 
-Collaboration Policy
+11. Collaboration Policy
 ==================
 
 This is an **individual project**.  All code you submit should be
@@ -565,7 +562,7 @@ Please see the syllabus for the full collaboration policy.
 
    **Plagarism will be punished harshly!**
 
-Access to Isengard
+12. Access to Isengard
 ==================
 
 We have changed the standard grading environment from the ALAMODE lab
