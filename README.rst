@@ -26,7 +26,7 @@ Deliverables
 We will continue to use GitHub for managing the submissions, and a link
 to the starter code will be provided on Canvas.
 
-Final Deliverable: Due 23:59 May 1, 2020
+Final Deliverable: Due 23:59 Dec 14, 2020
 ----------------------------------------
 
 -  All unit tests in the starter code pass when running ``make test``.
@@ -45,17 +45,13 @@ Final Deliverable: Due 23:59 May 1, 2020
 -  Details about individual memory accesses are correctly displayed when
    the ``–verbose`` flag is set (Section `8 <#sec:output>`__).
 
--  A file called ``author`` is present in ``submission-details/`` that
-   contains your name. You will receive a zero on this project if it is
-   not present.
-
 -  All unit tests in the starter code pass when running ``make test``.
 
 Examples of the correct output for this deliverable are provided with
 the starter code.
 
-While the official due date is 23:59 May 1, 2020, there will be an
-automatic extension until 23:59 May 6, 2020. However 23:59 May 6, 2020
+While the official due date is 23:59 Dec 14, 2020, there will be an
+automatic extension until 23:59 Dec 19, 2020. However 23:59 Dec 19, 2020
 is the FINAL deadline to ensure that grading is able to be completed in
 a timely manner.
 
@@ -104,10 +100,7 @@ Requirements and Reference
 
 -  Do not modify the directory structure provided in the starter code.
 
--  The ``author`` file must be present as detailed in Section
-   `1 <#sec:deliverables>`__.
-
--  Your project must execute correctly on the Alamode computers. That is
+-  Your project must execute correctly on Isengard. That is
    where it will be graded.
 
 -  As long as they are present on the Alamode computers, you are
@@ -124,7 +117,7 @@ Submission Checklist
 Please make sure that you have done all of the following prior to
 submission via the ``submit-my-work`` program:
 
-#. Your code compiles on the Alamode machines.
+#. Your code compiles on Isengard.
 
    -  Run ``make clean && make``. Your program should compile and
       "Successfully Compiled!" should print to the screen.
@@ -144,15 +137,6 @@ submission via the ``submit-my-work`` program:
    -  Run ``./test-my-work.sh`` from the root of your repository.
 
    -  Your solution should be identical to the provided solutions.
-
-#. Make sure the ``submission-details`` folder contains:
-
-   -  An ``author`` file that contains your full name.
-
-   -  A ``time-spent`` file that contains the time you have spent on
-      this project, in *minutes*. Please keep entering
-      ``echo MINUTES >> submission-details/time-spent`` (from the root
-      of your repository) as you progress through the project.
 
 #. All the files required for your project have been committed and
    pushed to your GitHub repository.
@@ -567,3 +551,40 @@ is not provided, it should default to 10.
 The ``–help`` flag must cause your program to print out instruction for
 how to run your program and the flags it accepts and then
 **immediately** exit.
+
+
+Collaboration Policy
+==================
+
+This is an **individual project**.  All code you submit should be
+written by yourself.  You should not share your code with others.
+
+Please see the syllabus for the full collaboration policy.
+
+.. warning::
+
+   **Plagarism will be punished harshly!**
+
+Access to Isengard
+==================
+
+We have changed the standard grading environment from the ALAMODE lab
+to Isengard with this project, as the functionality of the ALAMODE
+machines has been deteriorating this semester [#]_.
+
+Remote access to Isengard is quite similar to ALAMODE, but the
+hostname is ``isengard.mines.edu``.
+
+For example, to ``ssh`` into the machine with your campus MultiPass
+login, use this command::
+
+  $ ssh username@isengard.mines.edu
+
+Note: you need to be on the campus network or VPN for this to work.
+If you are working from home, use either the VPN or hop thru
+``imagine.mines.edu`` first.
+
+.. [#] Standard editors like Emacs and Vim have stopped functioning,
+   and we've even noticed compiler issues on some machines.  We
+   presume CCIT is struggling to maintain these machines with limited
+   lab access due to COVID.
