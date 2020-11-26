@@ -32,16 +32,18 @@ Single Deliverable: Due 23:59 Dec 14, 2020
 -  All unit tests in the starter code pass when running ``make test``.
 
 -  The replacement strategy can be specified using the ``–strategy``
-   flag (Section 7, Section 10).
+   flag (Section `7 <#sec:replacement_strats>`__, Section
+   `10 <#sec:flags>`__).
 
 -  The maximum number of frames a process may use is configurable using
-   the ``–max-frames`` flag (Section 6, Section 10).
+   the ``–max-frames`` flag (Section `6 <#sec:sim_props>`__, Section
+   `10 <#sec:flags>`__).
 
 -  All required information is present in the output as specified in
-   Section 8.
+   Section `8 <#sec:output>`__.
 
 -  Details about individual memory accesses are correctly displayed when
-   the ``–verbose`` flag is set (Section 8).
+   the ``–verbose`` flag is set (Section `8 <#sec:output>`__).
 
 -  All unit tests in the starter code pass when running ``make test``.
 
@@ -55,7 +57,7 @@ Grading
 Grading for this project will be split between passing unit tests and
 your program’s ability to produce the correct output given a simulation
 input file, so it is vital that you follow all output requirements as
-mentioned in Section 8. Given that you have been
+mentioned in Section `8 <#sec:output>`__. Given that you have been
 provided with example outputs and a script to help you verify your
 program’s outputs, little tolerance will be made for programs that do
 not abide by these output formatting rules and examples.
@@ -193,10 +195,10 @@ stores information retrieved from command line input. This struct is
 passed into the ``Simulation`` class via its constructor, and the values
 contained in it should be used for various aspects of your simulation.
 For example, the ``FlagOptions`` struct contains variables that let you
-know if you should be printing the verbose output (Section 8), 
-what the maximum number of frames for a process
-should be (Section 6), or what replacement strategy
-you should be using (Section 7).
+know if you should be printing the verbose output (Section
+`8 <#sec:output>`__), what the maximum number of frames for a process
+should be (Section `6 <#sec:sim_props>`__), or what replacement strategy
+you should be using (Section `7 <#sec:replacement_strats>`__).
 
 Unit Tests
 ----------
@@ -266,7 +268,8 @@ system with the following attributes:
    the system runs out of free frames to allocate.
 
 #. The default maximum number of frames is 10, however the user may
-   input a maximum frames value when executing the simulation (Section 10).
+   input a maximum frames value when executing the simulation (Section
+   `10 <#sec:flags>`__).
 
 #. All frames in main memory are available for use by user processes;
    the OS does not occupy any memory (unlike a real computer).
@@ -308,7 +311,8 @@ Replacement Strategies
 
 Your memory management simulation must support two different
 page-replacement strategies: FIFO and LRU. Which strategy to use should
-be provided as a command-line flag, as discussed in Section 10.
+be provided as a command-line flag, as discussed in Section
+`10 <#sec:flags>`__.
 
 Both of these strategies should be implemented as they are described in
 your textbook. While LRU is not feasible to implement in real operating
@@ -502,12 +506,14 @@ including the following command-line flags:
 ``-c, –csv``
 ------------
 
-The output required for the ``–csv`` flag is described in Section 8.
+The output required for the ``–csv`` flag is described in Section
+`8 <#sec:output>`__.
 
 ``-v, –verbose``
 ----------------
 
-The output required for the ``–verbose`` flag is described in Section 8.
+The output required for the ``–verbose`` flag is described in Section
+`8 <#sec:output>`__.
 
 ``-s, –strategy <FIFO | LRU>``
 ------------------------------
