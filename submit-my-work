@@ -10,7 +10,7 @@
          racket/random
          racket/string)
 
-(define executable-name "cpu-sim")
+(define executable-name "mem-sim")
 (define git-path (find-executable-path "git"))
 
 (struct git-error exn:fail:user ())
