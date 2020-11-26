@@ -31,17 +31,17 @@ Single Deliverable: Due 23:59 Dec 14, 2020
 
 -  All unit tests in the starter code pass when running ``make test``.
 
--  The replacement strategy can be specified using the ``–strategy``
+-  The replacement strategy can be specified using the ``-–strategy``
    flag (Section 7, Section 10).
 
 -  The maximum number of frames a process may use is configurable using
-   the ``–max-frames`` flag (Section 6, Section 10).
+   the ``–-max-frames`` flag (Section 6, Section 10).
 
 -  All required information is present in the output as specified in
    Section 8.
 
 -  Details about individual memory accesses are correctly displayed when
-   the ``–verbose`` flag is set (Section 8).
+   the ``–-verbose`` flag is set (Section 8).
 
 -  All unit tests in the starter code pass when running ``make test``.
 
@@ -331,7 +331,7 @@ You Need to Implement
 ``–verbose``
 ~~~~~~~~~~~~
 
-If ``–verbose`` or ``-v`` is specified, your simulation must output
+If ``–-verbose`` or ``-v`` is specified, your simulation must output
 information about each memory reference. The required information is as
 follows:
 
@@ -365,7 +365,7 @@ Implemented For You
 This section is provided for your reference. All the logging and output
 functionality in this section has been written for you.
 
-Unless the ``–csv`` or ``-c`` flag is input, your program should always
+Unless the ``–-csv`` or ``--c`` flag is input, your program should always
 output this information to the screen:
 
 -  The total number of memory accesses.
@@ -399,7 +399,7 @@ Here is an example of how this should look:
 ``–csv``
 ~~~~~~~~
 
-If ``–csv`` or ``-c`` is specified, your simulation must output the same
+If ``-–csv`` or ``--c`` is specified, your simulation must output the same
 information as mentioned above, but in the format shown below:
 
 ::
@@ -499,26 +499,26 @@ including the following command-line flags:
    -h --help
        Display a help message about these flags and exit
 
-``-c, –csv``
+``-c, -–csv``
 ------------
 
-The output required for the ``–csv`` flag is described in Section 8.
+The output required for the ``–-csv`` flag is described in Section 8.
 
-``-v, –verbose``
+``-v, -–verbose``
 ----------------
 
-The output required for the ``–verbose`` flag is described in Section 8.
+The output required for the ``–-verbose`` flag is described in Section 8.
 
-``-s, –strategy <FIFO | LRU>``
+``-s, –-strategy <FIFO | LRU>``
 ------------------------------
 
 This flag determines the replacement strategy that your simulation must
 use when either a process has been allocated the maximum number of
-frames (determined by ``–max-frames``) or the system has no free frames
+frames (determined by ``–-max-frames``) or the system has no free frames
 available. A strategy must be supplied when using this flag. If this
 flag is not provided, your program should default to using FIFO.
 
-``-f, –max-frames <positive integer>``
+``-f, –-max-frames <positive integer>``
 --------------------------------------
 
 This flag requires a positive integer argument and specifies the maximum
@@ -526,13 +526,13 @@ number of frames that can be allocated to a single process, assuming the
 system still has free frames available. If a process already has this
 number of frames, or the system has no more free frames to spare, you
 must replace one of the process’ other pages using the replacement
-strategy specified by ``–strategy`` to bring in a new page. If the flag
+strategy specified by ``-–strategy`` to bring in a new page. If the flag
 is not provided, it should default to 10.
 
 ``-h, –help``
 -------------
 
-The ``–help`` flag must cause your program to print out instruction for
+The ``-–help`` flag must cause your program to print out instruction for
 how to run your program and the flags it accepts and then
 **immediately** exit.
 
